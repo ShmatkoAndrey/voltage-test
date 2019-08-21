@@ -1,0 +1,98 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:#d9e4ea;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  &> div {
+    position: relative;
+    height: 550px;
+    padding: 50px;
+    // margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: white;
+    border-radius: 10px;
+  }
+}
+
+#controls {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#voltage-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+  margin-bottom: 100px;
+  border: 1px solid dimgray;
+  border-radius: 5px;
+
+  .voltage-value {
+    padding: 20px;
+    width: 180px;
+    span {
+      margin-right: 12px;
+      &.digits10 {
+        margin-right: 3px;
+      }
+    }
+  }
+}
+
+#voltage-chart {
+  width: 400px;
+  height: 400px;
+}
+
+.some-input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  input {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .error-message {
+    color: tomato;
+    opacity: 0;
+    &.vissible {
+      opacity: 1;
+    }
+  }
+}
+
+.lang {
+  position: absolute;
+  top: 10px;;
+  left: 5px;
+  a {
+    border: 1px solid grey;
+    padding: 5px;
+    color: dimgray;
+    text-decoration: none;
+    border-radius: 3px;
+    &:hover {
+      color: rgb(165, 165, 165);
+    }
+  }
+}
