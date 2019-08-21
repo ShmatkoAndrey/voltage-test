@@ -1,7 +1,7 @@
 <template>
   <div class="some-input">
     <input type="text" @input="inputChange($event)" v-model="text" />
-    <div class="error-message" :class="{'vissible': error}">Must be a valid integer</div>
+    <div class="error-message" :class="{'vissible': error}">{{$t('input-error')}}</div>
     <keyboard :input.sync="text" />
   </div>
 </template>

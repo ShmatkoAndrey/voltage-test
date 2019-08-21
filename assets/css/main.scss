@@ -34,15 +34,18 @@ body {
 
 #voltage-list {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
-  height: 300px;
+  // flex-wrap: wrap;
+  height: 320px;
   width: 400px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   border: 1px solid dimgray;
   border-radius: 5px;
-
+  .voltage-column {
+    display: flex;
+    flex-direction: column;
+  }
   .voltage-value {
     padding: 20px;
     width: 180px;

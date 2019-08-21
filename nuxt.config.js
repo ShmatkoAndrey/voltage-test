@@ -36,12 +36,18 @@ module.exports = {
         en: {
           vt: 'Voltage',
           ch: 'Chart',
-          txt: 'Input'
+          txt: 'Input',
+          'input-error': 'Must be a valid integer',
+          sensor: 'Sensor: Volts',
+          zero: 'Zero'
         },
         ru: {
           vt: 'Вольтаж',
           ch: 'Чарт',
-          txt: 'Ввод'
+          txt: 'Ввод',
+          'input-error': 'Должен быть целым числом',
+          sensor: 'Сенсор: Вольт',
+          zero: 'Обнулить'
         }
       }
     }

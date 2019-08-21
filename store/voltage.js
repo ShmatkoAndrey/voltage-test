@@ -26,6 +26,11 @@ export const actions = {
         commit('changeVoltage', {name: e, value: getRandom(3,6) })
       })
     }, 1000)
+  },
+  zeroVoltage({state, commit}) {
+    Object.keys(state.voltageList).forEach((e) => {
+      commit('changeVoltage', {name: e, value: 0 })
+    })
   }
 }
 
