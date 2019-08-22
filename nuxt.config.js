@@ -15,16 +15,17 @@ module.exports = {
   },
   plugins: [
     { src: '~plugins/vue-chartjs.js', ssr: false },
-    '~plugins/filters.js'
+    '~plugins/filters.js',
+    '~/plugins/fontawesome.js'
   ],
   css: [
     '@/assets/css/main.scss',
-    'simple-keyboard/build/css/index.css'
+    'simple-keyboard/build/css/index.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
   modules: [
     [
       'nuxt-i18n',
-       { /* module options */ }
     ]
   ],
   i18n: {
