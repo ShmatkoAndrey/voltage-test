@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="keyboard">
     <!-- <input
       :value="input"
       @input="onInputChange"
