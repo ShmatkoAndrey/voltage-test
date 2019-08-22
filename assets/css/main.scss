@@ -7,11 +7,25 @@ body {
   background:#d9e4ea;
 }
 
-.container {
+header {
+  height: 50px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  // background: white;
+  .content {
+    width: 1260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.container {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // height: 100vh;
   &> div {
     position: relative;
     height: 580px;
@@ -20,19 +34,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: white;
+    // background: white;
     border-radius: 10px;
   }
 }
 
 #controls {
-  width: 400px;
+  align-self: center;
+  width: 1260px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  margin: 0 auto;
 }
 
 #voltage-list {
+  align-self: center;
   display: flex;
   // flex-direction: column;
   justify-content: space-between;
@@ -59,6 +76,7 @@ body {
 }
 
 #voltage-chart {
+  align-self: center;
   width: 400px;
   height: 400px;
 }
@@ -85,9 +103,9 @@ body {
 }
 
 .lang {
-  position: absolute;
-  top: 10px;;
-  left: 5px;
+  // position: absolute;
+  // top: 10px;;
+  // left: 5px;
   a {
     border: 1px solid grey;
     padding: 5px;
@@ -101,9 +119,9 @@ body {
 }
 
 .expand {
-  position: absolute;
-  top: 5px;;
-  right: 5px;
+  // position: absolute;
+  // top: 5px;;
+  // right: 5px;
   width: 30px;
   height: 30px;
   border: 1px solid dimgray;
@@ -119,6 +137,28 @@ body {
   }
 }
 
+.table-name {
+  align-self: center;
+  width: 400px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1300px) {
+  header {
+    .content {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  #controls {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
 @media (max-width: 520px) {
   .container {
     &> div {
@@ -127,12 +167,16 @@ body {
   }
   #controls {
     width: 100%;
+    padding: 0;
   }
   #voltage-list {
     width: 100%;
     .voltage-value {
       width: 100%;
     }
+  }
+  .table-name {
+    width: 100%;
   }
   #voltage-chart {
     width: 100%;
@@ -155,7 +199,7 @@ body {
 
 @media (max-height: 600px) {
   body {
-    background:white;
+    // background:white;
   }
   .container {
     height: fit-content;
